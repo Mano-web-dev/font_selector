@@ -1,0 +1,56 @@
+body{
+  font-family: cairo , sans-serif;
+  font-size: 16px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+}
+.container > div {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+.container > div > div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(24px , 1fr));
+  min-width: 340px;
+  gap: 40px;
+  transition: .3;
+}
+.container > div > div > div{
+  transition: .3;
+  cursor: pointer;
+}
+.container .font-box{
+  background-color: #f5f5f5;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+}
+.container .font-box.active{
+  background-color: #000000ad;
+  color: white;
+}
+.container .font-size .options{
+  gap: 20px;
+}
+.container .size-box {
+  background-color: #f5f5f5;
+  padding: 5px 15px;
+}
+.container .color-box {
+  padding: 5px 10px;
+}
+.container .color-box.active{
+  color: white;
+}
+
